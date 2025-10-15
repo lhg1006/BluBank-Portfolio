@@ -5,7 +5,7 @@
 
 ## 🌐 라이브 데모
 
-**👉 [https://toss-portfolio.vercel.app/](https://toss-portfolio.vercel.app/)**
+**👉 [https://blu-bank-portfolio-4quu.vercel.app/](https://blu-bank-portfolio-4quu.vercel.app/)**
 
 실제 동작하는 데모를 확인하실 수 있습니다. 모든 기능이 구현되어 있으며, 반응형 디자인을 직접 체험해보세요!
 
@@ -171,7 +171,7 @@ breakpoints: {
 - 하단 네비게이션
 - PWA 지원
 
-> **실제 화면을 확인하려면**: [🌐 라이브 데모](https://toss-portfolio.vercel.app/)에서 직접 체험해보세요!
+> **실제 화면을 확인하려면**: [🌐 라이브 데모](https://blu-bank-portfolio-4quu.vercel.app/)에서 직접 체험해보세요!
 
 ## 🤝 기여하기
 
