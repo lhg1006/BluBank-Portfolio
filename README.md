@@ -75,8 +75,8 @@
 
 ```bash
 # 저장소 클론
-git clone https://github.com/lhg1006/toss-portfolio.git
-cd blubank-portfolio
+git clone https://github.com/lhg1006/BluBank-Portfolio.git
+cd BluBank-Portfolio
 
 # 의존성 설치
 yarn install
