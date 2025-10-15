@@ -18,7 +18,7 @@
 }
 
 
-/* 토스 디자인 토큰 */
+/* Design tokens */
 :root {
   --toss-blue: #3182f6;
   --toss-blue-light: #e8f3ff;
@@ -70,7 +70,7 @@ body {
   margin: 0;
 }
 
-/* 토스 스타일 스크롤바 */
+/* Styled scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -93,13 +93,13 @@ a {
   text-decoration: none;
 }
 
-/* 토스 스타일 포커스 */
+/* Focus style */
 *:focus {
   outline: 2px solid var(--toss-blue);
   outline-offset: 2px;
 }
 
-/* 토스 스타일 선택 */
+/* Selection style */
 ::selection {
   background: var(--toss-blue-light);
   color: var(--toss-blue);
@@ -110,7 +110,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* 토스 스타일 버튼 기본 스타일 */
+/* Button base style */
 button {
   font-family: inherit;
   font-weight: 600;

@@ -207,28 +207,28 @@ export default function Home() {
   const accounts = [
     {
       id: 0,
-      accountName: "토스뱅크 입출금",
+      accountName: "BluBank 입출금",
       accountNumber: "100012345678",
       balance: 1250000,
       cardColor: "blue" as const,
     },
     {
       id: 1,
-      accountName: "토스뱅크 적금",
+      accountName: "BluBank 적금",
       accountNumber: "200012345678",
       balance: 5000000,
       cardColor: "green" as const,
     },
     {
       id: 2,
-      accountName: "토스뱅크 모임통장",
+      accountName: "BluBank 모임통장",
       accountNumber: "300012345678",
       balance: 850000,
       cardColor: "purple" as const,
     },
     {
       id: 3,
-      accountName: "토스뱅크 외화통장",
+      accountName: "BluBank 외화통장",
       accountNumber: "400012345678",
       balance: 2300000,
       cardColor: "orange" as const,
@@ -319,9 +319,9 @@ export default function Home() {
 
   return (
     <>
-      <Header title="토스뱅크" />
+      <Header title="BluBank" />
       <Layout>
-        <PageTitle>토스뱅크</PageTitle>
+        <PageTitle>BluBank</PageTitle>
         <PortfolioSubtitle>포트폴리오 데모 - 실제 서비스가 아닙니다</PortfolioSubtitle>
         
         <Section>

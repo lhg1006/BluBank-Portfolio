@@ -1,32 +1,32 @@
 export const theme = {
   colors: {
-    // 토스 브랜드 컬러
+    // Brand colors
     primary: {
       50: '#f0f4ff',
       100: '#e0edff',
       200: '#b8d4ff',
       300: '#7bb3ff',
-      400: '#3182f6', // 토스 메인 블루
+      400: '#3182f6', // Main blue
       500: '#1b64da',
       600: '#1a56db',
       700: '#1e40af',
       800: '#1e3a8a',
       900: '#1e3a8a',
     },
-    // iOS 스타일 그레이
+    // iOS style gray
     gray: {
       50: '#fafafa',
-      100: '#f5f5f7', // iOS 배경
-      200: '#e5e5ea', // iOS 구분선
-      300: '#d1d1d6', // iOS 비활성
-      400: '#8e8e93', // iOS 보조 텍스트
+      100: '#f5f5f7', // iOS background
+      200: '#e5e5ea', // iOS divider
+      300: '#d1d1d6', // iOS inactive
+      400: '#8e8e93', // iOS secondary text
       500: '#636366',
       600: '#48484a',
       700: '#3a3a3c',
-      800: '#2c2c2e', // iOS 다크 배경
-      900: '#1c1c1e', // iOS 다크 텍스트
+      800: '#2c2c2e', // iOS dark background
+      900: '#1c1c1e', // iOS dark text
     },
-    // 토스 포인트 컬러
+    // Point colors
     toss: {
       blue: '#3182f6',
       lightBlue: '#e8f3ff',
@@ -37,7 +37,7 @@ export const theme = {
       purple: '#8b5cf6',
       pink: '#f472b6',
     },
-    // 토스 배경 그라데이션
+    // Background gradients
     backgrounds: {
       primary: 'linear-gradient(180deg, #fafbff 0%, #f0f4ff 100%)',
       secondary: 'linear-gradient(180deg, #ffffff 0%, #f5f5f7 100%)',
@@ -45,9 +45,9 @@ export const theme = {
       glass: 'rgba(255, 255, 255, 0.8)',
       glassBlur: 'rgba(255, 255, 255, 0.9)',
     },
-    success: '#00c896', // 토스 초록
-    warning: '#ff9500', // 토스 오렌지
-    error: '#ff6b6b', // 토스 빨강
+    success: '#00c896',
+    warning: '#ff9500',
+    error: '#ff6b6b',
     white: '#ffffff',
     black: '#1c1c1e',
   },
@@ -98,10 +98,10 @@ export const theme = {
       light: 300,
       normal: 400,
       medium: 500,
-      semibold: 600,  // 토스 기본 텍스트 가중치
-      bold: 700,      // 토스 강조 텍스트 가중치
-      heavy: 800,     // 토스 제목 가중치
-      black: 900,     // 토스 헤딩 가중치
+      semibold: 600,  // Default text weight
+      bold: 700,      // Emphasized text weight
+      heavy: 800,     // Heading weight
+      black: 900,     // Strong heading weight
     },
     lineHeight: {
       tight: 1.2,
@@ -124,7 +124,7 @@ export const theme = {
     md: '0 4px 12px rgba(0, 0, 0, 0.15)', // iOS 카드 그림자
     lg: '0 8px 25px rgba(0, 0, 0, 0.15)', // iOS 모달 그림자
     xl: '0 16px 40px rgba(0, 0, 0, 0.12)', // iOS 드롭 그림자
-    // 토스 스타일 그림자
+    // Brand style shadows
     toss: {
       card: '0 2px 8px rgba(49, 130, 246, 0.1), 0 1px 3px rgba(49, 130, 246, 0.06)',
       button: '0 4px 12px rgba(49, 130, 246, 0.15)',
@@ -132,7 +132,7 @@ export const theme = {
       glass: '0 4px 20px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.6)',
     },
   },
-  // 토스 스타일 이펙트
+  // Style effects
   effects: {
     backdrop: 'backdrop-filter: blur(20px) saturate(180%)',
     glass: 'backdrop-filter: blur(10px) saturate(120%)',

@@ -63,7 +63,7 @@ const mockPayments = [
     date: new Date("2024-07-10T14:30:00"),
     category: "카페",
     merchant: "스타벅스 강남점",
-    paymentMethod: "토스페이",
+    paymentMethod: "BluPay",
     location: "서울 강남구",
   },
   {
@@ -86,7 +86,7 @@ const mockPayments = [
     date: new Date("2024-07-09T19:45:00"),
     category: "식당",
     merchant: "아웃백 스테이크하우스 강남점",
-    paymentMethod: "토스뱅크 체크카드",
+    paymentMethod: "BluBank 체크카드",
     location: "서울 강남구",
   },
   {
@@ -97,7 +97,7 @@ const mockPayments = [
     date: new Date("2024-07-09T08:20:00"),
     category: "교통",
     merchant: "서울교통공사",
-    paymentMethod: "토스페이",
+    paymentMethod: "BluPay",
     location: "지하철 2호선 강남역",
   },
   {
@@ -180,7 +180,7 @@ export default function PaymentPage() {
           date: new Date(Date.now() - Math.random() * 86400000 * 7),
           category: ["카페", "식당", "쇼핑", "교통"][Math.floor(Math.random() * 4)],
           merchant: "가맹점명",
-          paymentMethod: ["토스페이", "신한카드", "KB국민카드"][Math.floor(Math.random() * 3)],
+          paymentMethod: ["BluPay", "신한카드", "KB국민카드"][Math.floor(Math.random() * 3)],
         },
       ];
       
