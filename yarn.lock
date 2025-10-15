@@ -3636,6 +3636,35 @@ __metadata:
   languageName: node
   linkType: hard
 
+"blubank-portfolio@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "blubank-portfolio@workspace:."
+  dependencies:
+    "@emotion/babel-plugin": "npm:^11.13.5"
+    "@emotion/react": "npm:^11.14.0"
+    "@emotion/styled": "npm:^11.14.1"
+    "@eslint/eslintrc": "npm:^3"
+    "@next/eslint-plugin-next": "npm:^15.3.5"
+    "@storybook/addon-docs": "npm:^9.0.15"
+    "@storybook/addon-onboarding": "npm:^9.0.15"
+    "@storybook/nextjs": "npm:^9.0.15"
+    "@tanstack/react-query": "npm:^5.81.5"
+    "@types/node": "npm:^20"
+    "@types/react": "npm:^19"
+    "@types/react-dom": "npm:^19"
+    eslint: "npm:^9"
+    eslint-config-next: "npm:15.3.5"
+    eslint-plugin-react-hooks: "npm:^5.2.0"
+    eslint-plugin-storybook: "npm:^9.0.15"
+    next: "npm:15.3.5"
+    react: "npm:^19.0.0"
+    react-dom: "npm:^19.0.0"
+    storybook: "npm:^9.0.15"
+    typescript: "npm:^5"
+    webpack: "npm:^5.99.9"
+  languageName: unknown
+  linkType: soft
+
 "bn.js@npm:^4.0.0, bn.js@npm:^4.1.0, bn.js@npm:^4.11.9":
   version: 4.12.2
   resolution: "bn.js@npm:4.12.2"
@@ -9118,35 +9147,6 @@ __metadata:
   checksum: 10c0/487988b0a19c654ff3e1961b87f471702e708fa8a8dd02a298ef16da7206692e8552a0250e8b3e8759270f62e9d8314616f6da274734d3b558b1fc7b7724e892
   languageName: node
   linkType: hard
-
-"toss-portfolio@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "toss-portfolio@workspace:."
-  dependencies:
-    "@emotion/babel-plugin": "npm:^11.13.5"
-    "@emotion/react": "npm:^11.14.0"
-    "@emotion/styled": "npm:^11.14.1"
-    "@eslint/eslintrc": "npm:^3"
-    "@next/eslint-plugin-next": "npm:^15.3.5"
-    "@storybook/addon-docs": "npm:^9.0.15"
-    "@storybook/addon-onboarding": "npm:^9.0.15"
-    "@storybook/nextjs": "npm:^9.0.15"
-    "@tanstack/react-query": "npm:^5.81.5"
-    "@types/node": "npm:^20"
-    "@types/react": "npm:^19"
-    "@types/react-dom": "npm:^19"
-    eslint: "npm:^9"
-    eslint-config-next: "npm:15.3.5"
-    eslint-plugin-react-hooks: "npm:^5.2.0"
-    eslint-plugin-storybook: "npm:^9.0.15"
-    next: "npm:15.3.5"
-    react: "npm:^19.0.0"
-    react-dom: "npm:^19.0.0"
-    storybook: "npm:^9.0.15"
-    typescript: "npm:^5"
-    webpack: "npm:^5.99.9"
-  languageName: unknown
-  linkType: soft
 
 "ts-api-utils@npm:^2.1.0":
   version: 2.1.0
