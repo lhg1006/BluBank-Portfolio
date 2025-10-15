@@ -1,4 +1,4 @@
-# Toss Portfolio Project
+# BluBank Portfolio Project
 
 ## Tech Stack
 
@@ -29,4 +29,4 @@
 - **Storybook**: Component documentation
 
 ## Project Purpose
-Portfolio website for Toss application, showcasing modern web development practices and the technology stack used at Toss.
+Portfolio website showcasing modern fintech UI/UX implementation with contemporary web development practices and technologies.

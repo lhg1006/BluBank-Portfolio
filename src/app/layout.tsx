@@ -16,9 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "토스뱅크 포트폴리오 데모",
-  description: "현대적인 핀테크 UI/UX를 구현한 뱅킹 앱 포트폴리오 데모입니다. 포트폴리오 목적으로 제작되었으며 실제 토스뱅크 서비스가 아닙니다.",
-  keywords: ["토스뱅크", "포트폴리오", "핀테크", "UI/UX", "React", "Next.js", "뱅킹앱"],
+  title: "BluBank Portfolio - Modern Banking App Demo",
+  description: "현대적인 핀테크 UI/UX를 구현한 뱅킹 앱 포트폴리오 데모입니다. 최신 웹 기술 스택을 활용한 반응형 뱅킹 인터페이스 구현 사례입니다.",
+  keywords: ["BluBank", "Banking", "Portfolio", "Fintech", "UI/UX", "React", "Next.js", "Banking App"],
   authors: [{ name: "lhg1006" }],
   creator: "lhg1006",
   publisher: "lhg1006",
