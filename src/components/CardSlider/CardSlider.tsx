@@ -36,7 +36,6 @@ const SliderTrack = styled.div<{ offset: number; isDragging?: boolean }>`
   height: 100%;
   transform: translateX(${props => props.offset}px);
   transition: ${props => props.isDragging ? 'none' : 'transform 0.3s ease-out'};
-  will-change: transform;
 `;
 
 const SlideItem = styled.div`

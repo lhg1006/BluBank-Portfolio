@@ -45,7 +45,6 @@ const CardContainer = styled.div<{ cardColor?: string }>`
   overflow: hidden;
   transition: ${theme.effects.transition};
   box-shadow: ${theme.shadows.toss.card};
-  will-change: transform, box-shadow;
   
   &:hover {
     transform: translateY(-4px);
@@ -78,7 +77,6 @@ const CardContainer = styled.div<{ cardColor?: string }>`
     background: rgba(255,255,255,0.1);
     border-radius: 50%;
     pointer-events: none;
-    backdrop-filter: blur(5px);
   }
   
   @media (max-width: ${theme.breakpoints.mobile}) {
@@ -125,9 +123,8 @@ const CopyButton = styled.button`
   font-size: ${theme.typography.fontSize.xs};
   font-weight: ${theme.typography.fontWeight.medium};
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  backdrop-filter: blur(10px);
-  
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+
   &:hover {
     background: rgba(255, 255, 255, 0.35);
     transform: scale(1.03);
@@ -160,7 +157,7 @@ const BalanceAmount = styled.h2<{ hidden?: boolean }>`
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
   font-variant-numeric: tabular-nums;
   
   ${(props) => props.hidden && `
@@ -185,8 +182,7 @@ const ToggleButton = styled.button`
   font-size: ${theme.typography.fontSize.sm};
   font-weight: ${theme.typography.fontWeight.medium};
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  backdrop-filter: blur(10px);
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
   z-index: 10;
   
   &:hover {

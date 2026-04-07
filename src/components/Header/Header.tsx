@@ -22,13 +22,12 @@ const HeaderContainer = styled.header<{ scrolled: boolean }>`
   justify-content: center;
   padding: 0 ${theme.spacing.lg};
   z-index: 1000;
-  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: transform 0.3s ease, opacity 0.3s ease;
   pointer-events: ${({ scrolled }) => scrolled ? 'auto' : 'none'};
   opacity: ${({ scrolled }) => scrolled ? 1 : 0};
   transform: ${({ scrolled }) => scrolled ? 'translateY(0)' : 'translateY(-10px)'};
   
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(20px) saturate(180%);
+  background: rgba(255, 255, 255, 0.95);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   
@@ -108,7 +107,6 @@ const PortfolioBadge = styled.div`
   font-size: ${theme.typography.fontSize.xs};
   font-weight: ${theme.typography.fontWeight.medium};
   border: 1px solid rgba(49, 130, 246, 0.2);
-  backdrop-filter: blur(10px);
   
   @media (max-width: ${theme.breakpoints.mobile}) {
     font-size: 10px;

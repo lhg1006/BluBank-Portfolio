@@ -45,7 +45,6 @@ const Main = styled.main`
   
   /* 토스 스타일 글래스 컨테이너 */
   background: ${theme.colors.backgrounds.glass};
-  backdrop-filter: blur(10px) saturate(120%);
   border-radius: 0 0 ${theme.borderRadius.xl} ${theme.borderRadius.xl};
   box-shadow: ${theme.shadows.toss.glass};
   border: 1px solid rgba(255, 255, 255, 0.2);

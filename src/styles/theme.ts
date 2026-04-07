@@ -134,8 +134,8 @@ export const theme = {
   },
   // Style effects
   effects: {
-    backdrop: 'backdrop-filter: blur(20px) saturate(180%)',
-    glass: 'backdrop-filter: blur(10px) saturate(120%)',
-    transition: 'all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+    backdrop: '',
+    glass: '',
+    transition: 'transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease, opacity 0.2s ease',
   },
 };

@@ -52,7 +52,6 @@ const StyledButton = styled.button<ButtonProps>`
         return `
           background: ${theme.colors.backgrounds.glassBlur};
           color: ${theme.colors.gray[700]};
-          backdrop-filter: blur(10px);
           border: 1px solid rgba(255, 255, 255, 0.3);
           box-shadow: ${theme.shadows.toss.card};
           
@@ -71,7 +70,6 @@ const StyledButton = styled.button<ButtonProps>`
           background: transparent;
           color: ${theme.colors.toss.blue};
           border: 2px solid ${theme.colors.toss.blue};
-          backdrop-filter: blur(5px);
           
           &:hover:not(:disabled) {
             background: ${theme.colors.toss.lightBlue};

@@ -3681,6 +3681,7 @@ __metadata:
   resolution: "blubank-portfolio@workspace:."
   dependencies:
     "@emotion/babel-plugin": "npm:^11.13.5"
+    "@emotion/cache": "npm:^11.14.0"
     "@emotion/react": "npm:^11.14.0"
     "@emotion/styled": "npm:^11.14.1"
     "@eslint/eslintrc": "npm:^3"

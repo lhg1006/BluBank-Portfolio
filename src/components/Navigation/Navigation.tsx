@@ -18,7 +18,6 @@ const NavigationContainer = styled.nav`
   border-top: 1px solid ${theme.colors.gray[200]};
   padding: ${theme.spacing.sm} 0;
   z-index: 100;
-  backdrop-filter: blur(10px);
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
 `;
 

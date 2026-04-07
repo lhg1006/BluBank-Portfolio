@@ -16,7 +16,6 @@ const ListContainer = styled.div`
 
 const InvestmentCard = styled.div`
   background: ${theme.colors.backgrounds.glassBlur};
-  backdrop-filter: blur(10px) saturate(120%);
   border-radius: ${theme.borderRadius.lg};
   padding: ${theme.spacing.lg};
   box-shadow: ${theme.shadows.toss.card};

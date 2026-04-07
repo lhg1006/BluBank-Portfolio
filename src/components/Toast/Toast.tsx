@@ -49,7 +49,6 @@ const ToastContainer = styled.div<{ isClosing: boolean }>`
   animation: ${(props) => (props.isClosing ? slideOut : slideIn)} 0.3s ease;
   font-size: ${theme.typography.fontSize.sm};
   font-weight: ${theme.typography.fontWeight.medium};
-  backdrop-filter: blur(10px);
   background: ${theme.colors.gray[900]};
   border: 1px solid rgba(255, 255, 255, 0.1);
 `;

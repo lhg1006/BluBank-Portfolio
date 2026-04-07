@@ -17,7 +17,6 @@ interface InvestmentFilterProps {
 
 const FilterContainer = styled.div`
   background: ${theme.colors.backgrounds.glassBlur};
-  backdrop-filter: blur(10px) saturate(120%);
   border-radius: ${theme.borderRadius.xl};
   padding: ${theme.spacing.lg};
   margin-bottom: ${theme.spacing.xl};

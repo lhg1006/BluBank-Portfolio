@@ -35,7 +35,6 @@ const SummaryContainer = styled.div`
 
 const SummaryCard = styled.div`
   background: ${theme.colors.backgrounds.glassBlur};
-  backdrop-filter: blur(10px) saturate(120%);
   border-radius: ${theme.borderRadius.xl};
   padding: ${theme.spacing.xl};
   box-shadow: ${theme.shadows.toss.card};

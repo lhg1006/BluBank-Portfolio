@@ -15,7 +15,7 @@ const StyledCard = styled.div<CardProps>`
   background-color: ${theme.colors.white};
   border-radius: ${theme.borderRadius.lg};
   border: 1px solid ${theme.colors.gray[200]};
-  transition: all 0.2s ease-in-out;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   
   ${({ padding }) => {
     switch (padding) {
