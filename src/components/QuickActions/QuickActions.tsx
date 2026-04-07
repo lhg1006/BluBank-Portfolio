@@ -3,6 +3,7 @@
 import styled from '@emotion/styled';
 import { theme } from '@/styles/theme';
 import { Button } from '@/components/Button';
+import { ArrowRightLeft, CreditCard, TrendingUp } from 'lucide-react';
 
 interface QuickActionsProps {
   onTransfer: () => void;
@@ -66,17 +67,17 @@ export const QuickActions: React.FC<QuickActionsProps> = ({
   return (
     <ActionsContainer>
       <ActionButton variant="primary" onClick={onTransfer}>
-        <ActionIcon>💙</ActionIcon>
+        <ActionIcon><ArrowRightLeft size={24} /></ActionIcon>
         <ActionLabel>송금</ActionLabel>
       </ActionButton>
-      
+
       <ActionButton variant="secondary" onClick={onPay}>
-        <ActionIcon>💳</ActionIcon>
+        <ActionIcon><CreditCard size={24} /></ActionIcon>
         <ActionLabel>결제</ActionLabel>
       </ActionButton>
-      
+
       <ActionButton variant="secondary" onClick={onInvest}>
-        <ActionIcon>📈</ActionIcon>
+        <ActionIcon><TrendingUp size={24} /></ActionIcon>
         <ActionLabel>투자</ActionLabel>
       </ActionButton>
     </ActionsContainer>

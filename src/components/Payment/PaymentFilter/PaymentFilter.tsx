@@ -135,21 +135,6 @@ const CategoryChip = styled.button<{ active: boolean; category: string }>`
     box-shadow: ${theme.shadows.toss.button};
   }
   
-  &::before {
-    content: '${({ category }) => {
-      const icons = {
-        '카페': '☕',
-        '식당': '🍽️', 
-        '쇼핑': '🛍️',
-        '온라인쇼핑': '📱',
-        '교통': '🚇',
-        '의료': '🏥',
-        '문화': '🎭',
-      };
-      return icons[category as keyof typeof icons] || '📄';
-    }}';
-    font-size: 14px;
-  }
 `;
 
 const PaymentMethodFilters = styled.div`
@@ -181,7 +166,7 @@ const PaymentMethodChip = styled.button<{ active: boolean }>`
   }
   
   &::before {
-    content: '💳 ';
+    content: '';
     margin-right: ${theme.spacing.xs};
   }
 `;

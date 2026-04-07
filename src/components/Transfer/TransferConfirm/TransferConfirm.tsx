@@ -1,6 +1,7 @@
 'use client';
 
 import styled from '@emotion/styled';
+import { ChevronLeft } from 'lucide-react';
 import { theme } from '@/styles/theme';
 import { Button } from '@/components/Button';
 import { TransferData } from '@/app/transfer/page';
@@ -132,7 +133,7 @@ export const TransferConfirm: React.FC<TransferConfirmProps> = ({
   return (
     <Container>
       <Header>
-        <BackButton onClick={onBack}>←</BackButton>
+        <BackButton onClick={onBack}><ChevronLeft size={20} /></BackButton>
         <Title>송금 정보를 확인해주세요</Title>
       </Header>
 

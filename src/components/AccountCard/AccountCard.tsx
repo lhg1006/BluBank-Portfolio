@@ -6,6 +6,7 @@ import { theme } from '@/styles/theme';
 import { Card } from '@/components/Card';
 import { useState } from 'react';
 import { useToast } from '@/hooks/useToast';
+import { Eye, EyeOff } from 'lucide-react';
 
 interface AccountCardProps {
   accountName: string;
@@ -49,6 +50,7 @@ const CardContainer = styled.div<{ cardColor?: string }>`
   &:hover {
     transform: translateY(-4px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    z-index: 10;
   }
   
   &:active {
@@ -321,7 +323,7 @@ export const AccountCard: React.FC<AccountCardProps> = ({
         </AccountInfo>
         {onToggleBalance && (
           <ToggleButton onClick={handleToggleBalance}>
-            {balanceVisible ? '👁️' : '👁️‍🗨️'}
+            {balanceVisible ? <Eye size={18} /> : <EyeOff size={18} />}
           </ToggleButton>
         )}
       </CardHeader>

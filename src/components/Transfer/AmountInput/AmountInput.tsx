@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { Delete } from 'lucide-react';
 import styled from '@emotion/styled';
 import { theme } from '@/styles/theme';
 import { Button } from '@/components/Button';
@@ -169,7 +170,7 @@ export const AmountInput: React.FC<AmountInputProps> = ({ onNext, initialAmount 
         ))}
         <KeyButton onClick={() => handleKeyPress('00')}>00</KeyButton>
         <KeyButton onClick={() => handleKeyPress('0')}>0</KeyButton>
-        <KeyButton onClick={handleDelete}>←</KeyButton>
+        <KeyButton onClick={handleDelete}><Delete size={20} /></KeyButton>
         <DeleteButton onClick={handleClear}>전체 삭제</DeleteButton>
       </Keypad>
 

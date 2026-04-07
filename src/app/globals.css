@@ -93,8 +93,12 @@ a {
   text-decoration: none;
 }
 
-/* Focus style */
+/* Focus style - 키보드 네비게이션만 표시 */
 *:focus {
+  outline: none;
+}
+
+*:focus-visible {
   outline: 2px solid var(--toss-blue);
   outline-offset: 2px;
 }

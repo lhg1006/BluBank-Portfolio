@@ -207,7 +207,7 @@ export const InvestmentFilter: React.FC<InvestmentFilterProps> = ({
           active={typeFilter === 'stock'}
           onClick={() => handleQuickFilter({ type: 'stock' })}
         >
-          📈 주식만 보기
+          주식만 보기
         </QuickFilterButton>
         
         <QuickFilterButton

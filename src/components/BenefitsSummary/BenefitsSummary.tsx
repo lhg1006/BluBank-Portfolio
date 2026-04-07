@@ -2,6 +2,7 @@
 
 import styled from '@emotion/styled';
 import { theme } from '@/styles/theme';
+import { Coffee, Train, ShoppingCart } from 'lucide-react';
 
 interface Benefit {
   id: string;
@@ -60,9 +61,18 @@ const BenefitItem = styled.div<{ color: string }>`
 `;
 
 const BenefitIcon = styled.div`
-  font-size: ${theme.typography.fontSize.xl};
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-right: ${theme.spacing.md};
+  color: ${theme.colors.gray[600]};
 `;
+
+const iconMap: Record<string, React.ReactNode> = {
+  cafe: <Coffee size={20} />,
+  transit: <Train size={20} />,
+  shopping: <ShoppingCart size={20} />,
+};
 
 const BenefitInfo = styled.div`
   flex: 1;
@@ -128,7 +138,7 @@ export const BenefitsSummary: React.FC<BenefitsSummaryProps> = ({ benefits }) =>
       <BenefitsList>
         {benefits.map((benefit) => (
           <BenefitItem key={benefit.id} color={benefit.color}>
-            <BenefitIcon>{benefit.icon}</BenefitIcon>
+            <BenefitIcon>{iconMap[benefit.icon] || benefit.icon}</BenefitIcon>
             <BenefitInfo>
               <BenefitCategory>{benefit.category}</BenefitCategory>
               <BenefitDescription>{benefit.description}</BenefitDescription>

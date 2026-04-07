@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import styled from '@emotion/styled';
 import { theme } from '@/styles/theme';
+import { ChevronLeft } from 'lucide-react';
 
 interface HeaderProps {
   title?: string;
@@ -71,9 +72,9 @@ const BackButton = styled.button`
 `;
 
 const BackIcon = styled.div`
-  font-size: ${theme.typography.fontSize.xl};
+  display: flex;
+  align-items: center;
   color: ${theme.colors.gray[700]};
-  line-height: 1;
 `;
 
 const HeaderTitle = styled.h1`
@@ -152,7 +153,7 @@ export const Header: React.FC<HeaderProps> = ({
         {showBackButton && (
           <HeaderLeft>
             <BackButton onClick={handleBackClick}>
-              <BackIcon>←</BackIcon>
+              <BackIcon><ChevronLeft size={24} /></BackIcon>
             </BackButton>
           </HeaderLeft>
         )}

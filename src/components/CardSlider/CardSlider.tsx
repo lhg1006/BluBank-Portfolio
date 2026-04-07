@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import styled from '@emotion/styled';
 import { keyframes } from '@emotion/react';
 import { theme } from '@/styles/theme';
@@ -13,13 +14,13 @@ interface CardSliderProps {
 const SliderContainer = styled.div`
   position: relative;
   width: 100%;
-  overflow: hidden;
+  overflow: visible;
 `;
 
 const SliderWrapper = styled.div`
   position: relative;
   height: 240px;
-  overflow: hidden;
+  overflow: visible;
   cursor: grab;
   
   &:active {
@@ -330,15 +331,15 @@ export const CardSlider: React.FC<CardSliderProps> = ({ children, showIndicators
           onClick={handlePrev}
           disabled={currentIndex === 0}
         >
-          ←
+          <ChevronLeft size={20} />
         </NavigationButton>
-        
-        <NavigationButton 
-          direction="next" 
+
+        <NavigationButton
+          direction="next"
           onClick={handleNext}
           disabled={currentIndex >= maxIndex}
         >
-          →
+          <ChevronRight size={20} />
         </NavigationButton>
       </SliderWrapper>
       

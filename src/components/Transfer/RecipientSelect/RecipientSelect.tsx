@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { ChevronLeft } from 'lucide-react';
 import styled from '@emotion/styled';
 import { theme } from '@/styles/theme';
 import { Button } from '@/components/Button';
@@ -195,7 +196,7 @@ export const RecipientSelect: React.FC<RecipientSelectProps> = ({
   return (
     <Container>
       <Header>
-        <BackButton onClick={onBack}>←</BackButton>
+        <BackButton onClick={onBack}><ChevronLeft size={20} /></BackButton>
         <Title>누구에게 보낼까요?</Title>
       </Header>
 

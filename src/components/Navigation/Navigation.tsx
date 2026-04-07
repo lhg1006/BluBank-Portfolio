@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import styled from '@emotion/styled';
 import { theme } from '@/styles/theme';
+import { Home, ArrowRightLeft, CreditCard, TrendingUp, Menu } from 'lucide-react';
 
 interface NavigationProps {
   activeTab?: string;
@@ -53,9 +54,12 @@ const TabItem = styled.button<{ active: boolean }>`
 `;
 
 const TabIcon = styled.div<{ active: boolean }>`
-  font-size: ${theme.typography.fontSize.xl};
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: ${theme.effects.transition};
-  
+  color: ${(props) => props.active ? theme.colors.toss.blue : theme.colors.gray[400]};
+
   ${(props) => props.active && `
     transform: scale(1.1);
   `}
@@ -67,12 +71,20 @@ const TabLabel = styled.span<{ active: boolean }>`
   color: ${(props) => props.active ? theme.colors.toss.blue : theme.colors.gray[600]};
 `;
 
+const iconMap: Record<string, React.ReactNode> = {
+  home: <Home size={22} />,
+  transfer: <ArrowRightLeft size={22} />,
+  pay: <CreditCard size={22} />,
+  invest: <TrendingUp size={22} />,
+  more: <Menu size={22} />,
+};
+
 const tabs = [
-  { id: 'home', label: '홈', icon: '🏠' },
-  { id: 'transfer', label: '송금', icon: '💸' },
-  { id: 'pay', label: '결제', icon: '💳' },
-  { id: 'invest', label: '투자', icon: '📈' },
-  { id: 'more', label: '전체', icon: '☰' },
+  { id: 'home', label: '홈' },
+  { id: 'transfer', label: '송금' },
+  { id: 'pay', label: '결제' },
+  { id: 'invest', label: '투자' },
+  { id: 'more', label: '전체' },
 ];
 
 export const Navigation: React.FC<NavigationProps> = ({ 
@@ -102,7 +114,7 @@ export const Navigation: React.FC<NavigationProps> = ({
         window.location.href = '/invest';
         break;
       case 'more':
-        console.log('전체 메뉴로 이동');
+        window.location.href = '/more';
         break;
     }
   };
@@ -117,7 +129,7 @@ export const Navigation: React.FC<NavigationProps> = ({
             onClick={() => handleTabClick(tab.id)}
           >
             <TabIcon active={currentTab === tab.id}>
-              {tab.icon}
+              {iconMap[tab.id]}
             </TabIcon>
             <TabLabel active={currentTab === tab.id}>
               {tab.label}
